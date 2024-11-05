@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "python-project-template"
+version = "0.1.0"
+description = ""
+authors = ["Peder Ward"]
+readme = "README.md"
+packages = [{include = "python_project_template"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.2.3"
+flake8 = "^7.1.1"
+matplotlib = "^3.9.2"
+ipykernel = "^6.29.5"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,22 @@
+{
+    "name": "Python Project Template",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": ".."
+    },
+    "settings": {
+    },
+    "extensions": [
+        "ms-azuretools.vscode-docker",
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "deepakgupta191199.save-commands",
+        "ms-python.pylint",
+        "ms-python.flake8",
+        "ms-python.mypy-type-checker",
+        "ms-python.isort",
+        "ms-python.black-formatter",
+        "mhutchie.git-graph"
+    ]
+  }
+  

@@ -1,0 +1,8 @@
+# .gitignore
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+dist/
+build/
+poetry.lock
