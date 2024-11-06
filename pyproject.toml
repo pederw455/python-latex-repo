@@ -7,11 +7,16 @@ readme = "README.md"
 packages = [{include = "python_project_template"}]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 pandas = "^2.2.3"
 flake8 = "^7.1.1"
 matplotlib = "^3.9.2"
 ipykernel = "^6.29.5"
+python-dotenv = "^1.0.1"
+openai = "^1.54.0"
+pylatex = "^1.4.2"
+pdflatex = "^0.1.3"
+scipy = "^1.14.1"
 
 
 [tool.poetry.group.dev.dependencies]
