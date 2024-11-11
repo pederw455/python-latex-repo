@@ -1,0 +1,23 @@
+\section{Gravitational Assist Algorithm}
+
+\subsection{Introduction}
+This section outlines an algorithm for calculating the final velocity of a spacecraft after a gravitational assist with a planet. The calculation considers the initial velocities, masses, and distances involved.
+
+\subsection{Variables}
+\begin{itemize}
+    \item $v_{\text{sc}}$: Initial velocity of the spacecraft in m/s.
+    \item $v_{\text{p}}$: Velocity of the planet in m/s.
+    \item $m_{\text{p}}$: Mass of the planet in kg.
+    \item $d_{\text{closest}}$: Distance of closest approach in meters.
+    \item $v_{\text{rel, init}}$: Relative initial velocity between spacecraft and planet.
+    \item $v_{\infty}$: Velocity at infinity (far from the planet) after gravitational interaction.
+    \item $v_{\text{final}}$: Spacecraft's final velocity after the gravitational assist.
+    \item $G$: Gravitational constant, $6.67430 \times 10^{-11} \, \text{m}^3 \, \text{kg}^{-1} \, \text{s}^{-2}$.
+\end{itemize}
+
+\subsection{Formulas}
+\begin{align*}
+    v_{\text{rel, init}} &= |v_{\text{sc}} - v_{\text{p}}| \\
+    v_{\infty} &= \sqrt{v_{\text{rel, init}}^2 + \frac{2 \cdot G \cdot m_{\text{p}}}{d_{\text{closest}}}} \\
+    v_{\text{final}} &= \sqrt{v_{\text{sc}}^2 + 2 \cdot (v_{\infty}^2 - v_{\text{sc}} \cdot v_{\infty} \cdot \cos(\pi))}
+\end{align*}

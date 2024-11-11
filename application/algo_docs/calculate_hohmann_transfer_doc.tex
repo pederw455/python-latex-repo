@@ -1,0 +1,34 @@
+\section{Hohmann Transfer Orbit Calculation}
+
+\subsection{Introduction} 
+The Hohmann transfer algorithm calculates the velocity changes (delta-v) required to transfer a spacecraft from Earth's orbit to Mars's orbit. This is achieved through the use of gravitational interactions, specifically the Sun's gravitational influence.
+
+\subsection{Variables}
+
+\begin{itemize}
+    \item $r_{\text{earth}}$: Radius of Earth's orbit around the Sun in meters.
+    \item $r_{\text{mars}}$: Radius of Mars's orbit around the Sun in meters.
+    \item $\mu_{\text{sun}}$: Gravitational constant for the Sun in m$^3$/s$^2$.
+    \item $v_{\text{earth}}$: Velocity of Earth in its orbit.
+    \item $v_{\text{mars}}$: Velocity of Mars in its orbit.
+    \item $a_{\text{transfer}}$: Semi-major axis of the Hohmann transfer orbit.
+    \item $v_{\text{transfer\_earth}}$: Velocity required at Earth for the transfer orbit.
+    \item $v_{\text{transfer\_mars}}$: Velocity required at Mars for the transfer orbit.
+    \item $\Delta v_{\text{earth}}$: Delta-v required to escape Earth's orbit and enter the transfer orbit.
+    \item $\Delta v_{\text{mars}}$: Delta-v required to enter Mars's orbit from the transfer orbit.
+    \item $\Delta v_{\text{total}}$: Total delta-v for the entire transfer.
+\end{itemize}
+
+\subsection{Formulas}
+
+\begin{align*}
+    \mu_{\text{sun}} &= 1.32712440018 \times 10^{20} \, \text{m}^3/\text{s}^2 \\
+    v_{\text{earth}} &= \sqrt{\frac{\mu_{\text{sun}}}{r_{\text{earth}}}} \\
+    v_{\text{mars}} &= \sqrt{\frac{\mu_{\text{sun}}}{r_{\text{mars}}}} \\
+    a_{\text{transfer}} &= \frac{r_{\text{earth}} + r_{\text{mars}}}{2} \\
+    v_{\text{transfer\_earth}} &= \sqrt{\frac{2\mu_{\text{sun}}}{r_{\text{earth}}} - \frac{\mu_{\text{sun}}}{a_{\text{transfer}}}} \\
+    v_{\text{transfer\_mars}} &= \sqrt{\frac{2\mu_{\text{sun}}}{r_{\text{mars}}} - \frac{\mu_{\text{sun}}}{a_{\text{transfer}}}} \\
+    \Delta v_{\text{earth}} &= v_{\text{transfer\_earth}} - v_{\text{earth}} \\
+    \Delta v_{\text{mars}} &= v_{\text{mars}} - v_{\text{transfer\_mars}} \\
+    \Delta v_{\text{total}} &= \lvert \Delta v_{\text{earth}} \rvert + \lvert \Delta v_{\text{mars}} \rvert
+\end{align*}

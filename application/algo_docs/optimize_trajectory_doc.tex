@@ -1,0 +1,38 @@
+\section{Optimization of Spacecraft Trajectory}
+
+\subsection{Introduction}
+
+In this section, we present an algorithm designed to optimize a spacecraft's trajectory by maximizing fuel efficiency and utilizing gravitational assists. The algorithm calculates the optimal time and thrust parameters to minimize the cost function, which incorporates several penalties and efficiencies.
+
+\subsection{Variables}
+
+\begin{itemize}
+    \item $m_{\text{fuel}}$: Total mass of fuel onboard in kilograms (kg).
+    \item $T_{\text{initial}}$: Initial thrust in Newtons (N).
+    \item $d_{\text{closest}}$: Closest approach distance to the celestial body in meters (m).
+    \item $t$: Time for which the thrust is applied in seconds (s).
+    \item $T$: Thrust applied in Newtons (N).
+    \item $\Delta v$: Change in velocity (delta-v) in meters per second (m/s).
+    \item $E_{\text{grav}}$: Effect of gravitational assist.
+    \item $d_{\text{traveled}}$: Distance traveled by the spacecraft in meters (m).
+    \item $m_{\text{used}}$: Fuel mass used in kilograms (kg).
+    \item $P_{\text{time}}$: Penalty for the elapsed time.
+    \item $P_{\text{efficiency}}$: Penalty based on efficiency related to the closest approach.
+    \item $C$: Total cost function value.
+\end{itemize}
+
+\subsection{Formulas}
+
+\begin{align*}
+\Delta v &= \frac{T \cdot t}{m_{\text{fuel}}} \\
+E_{\text{grav}} &= 
+\begin{cases} 
+\ln(d_{\text{closest}}) & \text{if } d_{\text{closest}} > 1 \\
+0 & \text{otherwise}
+\end{cases} \\
+d_{\text{traveled}} &= \frac{\Delta v \cdot t \cdot E_{\text{grav}}}{2} \\
+m_{\text{used}} &= m_{\text{fuel}} - \frac{T \cdot t}{\Delta v} \\
+P_{\text{time}} &= 0.05 \cdot t^{1.2} \\
+P_{\text{efficiency}} &= 0.01 \cdot (d_{\text{closest}} - 7 \times 10^6)^2 \\
+C &= m_{\text{used}} + P_{\text{time}} + P_{\text{efficiency}}
+\end{align*}

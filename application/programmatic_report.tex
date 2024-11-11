@@ -1,0 +1,48 @@
+\documentclass{report}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+%
+\input{algo_docs/init.tex}%
+%
+\begin{document}%
+\normalsize%
+\input{algo_docs/title_page.tex}%
+\tableofcontents%
+\chapter{Introduction}%
+\label{chap:Introduction}%
+This document provides an overview of various algorithms and their significance in computational problem{-}solving. It aims to set the foundation for understanding the design, analysis, and application of different algorithms across various domains.
+
+%
+\chapter{Algorithms}%
+\label{chap:Algorithms}%
+This chapter presents detailed analyses of different algorithms. It explores their mechanisms, use cases, and the theoretical concepts that underlie their effectiveness. Each algorithm is discussed with practical insights to highlight its strengths and potential limitations.
+
+%
+\input{algo_docs/optimize_trajectory_doc.tex}%
+\subsection{Code Listing}%
+\label{subsec:CodeListing}%
+\lstinputlisting[language=Python]{python_code/optimize_trajectory.py}
+
+%
+\input{algo_docs/predator_prey_system_doc.tex}%
+\subsection{Code Listing}%
+\label{subsec:CodeListing}%
+\lstinputlisting[language=Python]{python_code/predator_prey_system.py}
+
+%
+\input{algo_docs/gravitational_assist_doc.tex}%
+\subsection{Code Listing}%
+\label{subsec:CodeListing}%
+\lstinputlisting[language=Python]{python_code/gravitational_assist.py}
+
+%
+\input{algo_docs/calculate_hohmann_transfer_doc.tex}%
+\subsection{Code Listing}%
+\label{subsec:CodeListing}%
+\lstinputlisting[language=Python]{python_code/calculate_hohmann_transfer.py}
+
+%
+\end{document}

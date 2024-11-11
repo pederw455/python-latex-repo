@@ -1,0 +1,45 @@
+{
+    "debug.internalConsoleOptions": "neverOpen",
+    "black-formatter.args": ["--line-length", "150"],
+    "flake8.args": [
+        "--max-line-length=150",
+        "--ignore=W503,E203",
+    ],
+    "python.defaultInterpreterPath": "./.venv/bin/python",
+    "editor.formatOnSave": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#ab307e",
+        "activityBar.activeBorder": "#25320e",
+        "activityBar.background": "#ab307e",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#25320e",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "statusBar.background": "#832561",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#ab307e",
+        "titleBar.activeBackground": "#832561",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#83256199",
+        "titleBar.inactiveForeground": "#e7e7e799",
+        "editorGroup.border": "#ab307e",
+        "panel.border": "#ab307e",
+        "sash.hoverBorder": "#ab307e",
+        "sideBar.border": "#ab307e",
+        "statusBarItem.remoteBackground": "#832561",
+        "statusBarItem.remoteForeground": "#e7e7e7"
+    },
+    "python.testing.pytestArgs": [
+        "unit_tests",
+        "integration_tests"
+    ],
+    "python.testing.pytestPath": "./.venv/bin/pytest",
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+}
