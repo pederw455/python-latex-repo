@@ -1,0 +1,24 @@
+\section{Predator-Prey System}
+
+\subsection{Introduction}
+
+The predator-prey system is a set of differential equations known as the Lotka-Volterra equations, which describe the dynamics of biological systems in which two species interact: a prey and a predator.
+
+\subsection{Variables}
+
+\begin{itemize}
+    \item $p_{\text{prey}}$: Population of prey at time $t$.
+    \item $p_{\text{predator}}$: Population of predators at time $t$.
+    \item $t$: Time variable.
+    \item $\alpha$: Growth rate of the prey.
+    \item $\beta$: Rate at which predators consume prey.
+    \item $\delta$: Growth rate of predators due to consumption of prey.
+    \item $\gamma$: Natural death rate of predators.
+\end{itemize}
+
+\subsection{Formulas}
+
+\begin{align*}
+    \frac{dp_{\text{prey}}}{dt} &= \alpha p_{\text{prey}} - \beta p_{\text{prey}} p_{\text{predator}} \\
+    \frac{dp_{\text{predator}}}{dt} &= \delta p_{\text{prey}} p_{\text{predator}} - \gamma p_{\text{predator}}
+\end{align*}

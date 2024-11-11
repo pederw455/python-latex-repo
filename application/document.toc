@@ -1,7 +1,0 @@
-\contentsline {chapter}{\numberline {1}Introduction}{2}{}%
-\contentsline {chapter}{\numberline {2}Hohmann Transfer Orbit Algorithm}{3}{}%
-\contentsline {section}{\numberline {2.1}Algorithm Overview}{3}{}%
-\contentsline {section}{\numberline {2.2}Parameters and Constants}{3}{}%
-\contentsline {section}{\numberline {2.3}Mathematical Model}{3}{}%
-\contentsline {section}{\numberline {2.4}Python Code}{4}{}%
-\contentsline {section}{\numberline {2.5}Plots}{4}{}%
