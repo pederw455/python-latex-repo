@@ -1,0 +1,42 @@
+\subsection{Example}
+
+To demonstrate the Hohmann transfer orbit calculation, consider the following scenario:
+
+\begin{align*}
+    r_{\text{earth}} &= 1.496 \times 10^{11} \, \text{m} \\
+    r_{\text{mars}} &= 2.279 \times 10^{11} \, \text{m} \\
+    \Delta v_{\text{earth}}, \Delta v_{\text{mars}}, \Delta v_{\text{total}} &= \text{calculate\_hohmann\_transfer}(r_{\text{earth}}, r_{\text{mars}})
+\end{align*}
+
+To visualize the orbits involved in the transfer, consider the following coordinates:
+
+1. Earth's orbit around the Sun is circular, with coordinates \((x, y)\) given by:
+   \begin{align*}
+       x_{\text{earth}} &= r_{\text{earth}} \cdot \cos(\theta) \\
+       y_{\text{earth}} &= r_{\text{earth}} \cdot \sin(\theta)
+   \end{align*}
+
+2. Similarly, Mars's orbit coordinates are given by:
+   \begin{align*}
+       x_{\text{mars}} &= r_{\text{mars}} \cdot \cos(\theta) \\
+       y_{\text{mars}} &= r_{\text{mars}} \cdot \sin(\theta)
+   \end{align*}
+
+For the transfer orbit:
+
+- The semi-major axis \(a_{\text{transfer}}\) and eccentricity \(e_{\text{transfer}}\) are calculated as follows:
+  \begin{align*}
+      a_{\text{transfer}} &= \frac{r_{\text{earth}} + r_{\text{mars}}}{2} \\
+      e_{\text{transfer}} &= \frac{r_{\text{mars}} - r_{\text{earth}}}{r_{\text{earth}} + r_{\text{mars}}}
+  \end{align*}
+
+- The coordinates \((x, y)\) for the Hohmann transfer orbit are:
+  \begin{align*}
+      x_{\text{transfer}} &= a_{\text{transfer}} \cdot (\cos(\theta) - e_{\text{transfer}}) \\
+      y_{\text{transfer}} &= a_{\text{transfer}} \cdot \sqrt{1 - e_{\text{transfer}}^2} \cdot \sin(\theta)
+  \end{align*}
+
+The total velocity change \(\Delta v_{\text{total}}\) required for the transfer orbit is given by:
+\begin{align*}
+    \Delta v_{\text{total}} &= \Delta v_{\text{earth}} + \Delta v_{\text{mars}}
+\end{align*}

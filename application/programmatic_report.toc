@@ -1,22 +1,26 @@
 \contentsline {chapter}{\numberline {1}Introduction}{2}{}%
 \contentsline {chapter}{\numberline {2}Algorithms}{3}{}%
-\contentsline {section}{\numberline {2.1}Optimization of Spacecraft Trajectory}{3}{}%
-\contentsline {subsection}{\numberline {2.1.1}Introduction}{3}{}%
-\contentsline {subsection}{\numberline {2.1.2}Variables}{3}{}%
+\contentsline {section}{\numberline {2.1}Optimization of Spacecraft Trajectory}{4}{}%
+\contentsline {subsection}{\numberline {2.1.1}Introduction}{4}{}%
+\contentsline {subsection}{\numberline {2.1.2}Variables}{4}{}%
 \contentsline {subsection}{\numberline {2.1.3}Formulas}{4}{}%
-\contentsline {subsection}{\numberline {2.1.4}Code Listing}{4}{}%
-\contentsline {section}{\numberline {2.2}Predator-Prey System}{5}{}%
-\contentsline {subsection}{\numberline {2.2.1}Introduction}{5}{}%
-\contentsline {subsection}{\numberline {2.2.2}Variables}{5}{}%
-\contentsline {subsection}{\numberline {2.2.3}Formulas}{6}{}%
-\contentsline {subsection}{\numberline {2.2.4}Code Listing}{6}{}%
-\contentsline {section}{\numberline {2.3}Gravitational Assist Algorithm}{6}{}%
-\contentsline {subsection}{\numberline {2.3.1}Introduction}{6}{}%
-\contentsline {subsection}{\numberline {2.3.2}Variables}{7}{}%
-\contentsline {subsection}{\numberline {2.3.3}Formulas}{7}{}%
-\contentsline {subsection}{\numberline {2.3.4}Code Listing}{7}{}%
-\contentsline {section}{\numberline {2.4}Hohmann Transfer Orbit Calculation}{8}{}%
-\contentsline {subsection}{\numberline {2.4.1}Introduction}{8}{}%
-\contentsline {subsection}{\numberline {2.4.2}Variables}{8}{}%
-\contentsline {subsection}{\numberline {2.4.3}Formulas}{9}{}%
-\contentsline {subsection}{\numberline {2.4.4}Code Listing}{9}{}%
+\contentsline {subsection}{\numberline {2.1.4}Example}{5}{}%
+\contentsline {subsection}{\numberline {2.1.5}Code Listing}{6}{}%
+\contentsline {section}{\numberline {2.2}Predator-Prey System}{8}{}%
+\contentsline {subsection}{\numberline {2.2.1}Introduction}{8}{}%
+\contentsline {subsection}{\numberline {2.2.2}Variables}{8}{}%
+\contentsline {subsection}{\numberline {2.2.3}Formulas}{8}{}%
+\contentsline {subsection}{\numberline {2.2.4}Example}{8}{}%
+\contentsline {subsection}{\numberline {2.2.5}Code Listing}{10}{}%
+\contentsline {section}{\numberline {2.3}Gravitational Assist Algorithm}{11}{}%
+\contentsline {subsection}{\numberline {2.3.1}Introduction}{11}{}%
+\contentsline {subsection}{\numberline {2.3.2}Variables}{11}{}%
+\contentsline {subsection}{\numberline {2.3.3}Formulas}{11}{}%
+\contentsline {subsection}{\numberline {2.3.4}Example}{11}{}%
+\contentsline {subsection}{\numberline {2.3.5}Code Listing}{14}{}%
+\contentsline {section}{\numberline {2.4}Hohmann Transfer Orbit Calculation}{15}{}%
+\contentsline {subsection}{\numberline {2.4.1}Introduction}{15}{}%
+\contentsline {subsection}{\numberline {2.4.2}Variables}{15}{}%
+\contentsline {subsection}{\numberline {2.4.3}Formulas}{16}{}%
+\contentsline {subsection}{\numberline {2.4.4}Example}{16}{}%
+\contentsline {subsection}{\numberline {2.4.5}Code Listing}{18}{}%
