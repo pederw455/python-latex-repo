@@ -1,0 +1,92 @@
+
+    Generate LaTeX code from the provided Python code. Follow these guidelines:
+
+    1. **Document Structure**:
+    - Use the provided LaTeX document and Python example to create an `Example` subsection.
+    - Only include the variables in the same notation as used in the LaTeX document (e.g., `m_{	ext{fuel}}` for `fuel_mass`).
+    - Avoid any direct references to Python functions or libraries (e.g., do not use `np.linspace` or `np.argmin`).
+    - You dont need to do the calculations, but can describe what the formulas do instead.
+
+    2. **Formatting Rules**:
+    - Include **only** the relevant LaTeX content, without `\documentclass`, `\usepackage`, `\begin{document}`, `\end{document}`, or any unrelated text.
+    - Do **not** include triple backticks (e.g., ```latex or ```).
+    - Use display math environments (e.g., `\begin{align*}...\end{align*}`) and ensure all brackets, parentheses, and braces are correctly matched.
+    - Maintain consistent subscript notation for variables to match the example LaTeX document (e.g., `T_{	ext{initial}}` for initial thrust).
+
+    3. **Important Notes**:
+    - Focus exclusively on formatting the variables in LaTeX with the same subscripts and symbols as in the provided document.
+    - Do **not** include bullet points, itemized lists, or unrelated sections; limit content to the variables and the equations within the `align*` environment.
+    - Provide ranges or lists in LaTeX notation rather than using Python functions (e.g., use `[5 	imes 10^6, 2 	imes 10^7]` instead of `np.linspace`).
+     Latex code: \section{Hohmann Transfer Orbit Calculation}
+
+\subsection{Introduction} 
+The Hohmann transfer algorithm calculates the velocity changes (delta-v) required to transfer a spacecraft from Earth's orbit to Mars's orbit. This is achieved through the use of gravitational interactions, specifically the Sun's gravitational influence.
+
+\subsection{Variables}
+
+\begin{itemize}
+    \item $r_{\text{earth}}$: Radius of Earth's orbit around the Sun in meters.
+    \item $r_{\text{mars}}$: Radius of Mars's orbit around the Sun in meters.
+    \item $\mu_{\text{sun}}$: Gravitational constant for the Sun in m$^3$/s$^2$.
+    \item $v_{\text{earth}}$: Velocity of Earth in its orbit.
+    \item $v_{\text{mars}}$: Velocity of Mars in its orbit.
+    \item $a_{\text{transfer}}$: Semi-major axis of the Hohmann transfer orbit.
+    \item $v_{\text{transfer\_earth}}$: Velocity required at Earth for the transfer orbit.
+    \item $v_{\text{transfer\_mars}}$: Velocity required at Mars for the transfer orbit.
+    \item $\Delta v_{\text{earth}}$: Delta-v required to escape Earth's orbit and enter the transfer orbit.
+    \item $\Delta v_{\text{mars}}$: Delta-v required to enter Mars's orbit from the transfer orbit.
+    \item $\Delta v_{\text{total}}$: Total delta-v for the entire transfer.
+\end{itemize}
+
+\subsection{Formulas}
+
+\begin{align*}
+    \mu_{\text{sun}} &= 1.32712440018 \times 10^{20} \, \text{m}^3/\text{s}^2 \\
+    v_{\text{earth}} &= \sqrt{\frac{\mu_{\text{sun}}}{r_{\text{earth}}}} \\
+    v_{\text{mars}} &= \sqrt{\frac{\mu_{\text{sun}}}{r_{\text{mars}}}} \\
+    a_{\text{transfer}} &= \frac{r_{\text{earth}} + r_{\text{mars}}}{2} \\
+    v_{\text{transfer\_earth}} &= \sqrt{\frac{2\mu_{\text{sun}}}{r_{\text{earth}}} - \frac{\mu_{\text{sun}}}{a_{\text{transfer}}}} \\
+    v_{\text{transfer\_mars}} &= \sqrt{\frac{2\mu_{\text{sun}}}{r_{\text{mars}}} - \frac{\mu_{\text{sun}}}{a_{\text{transfer}}}} \\
+    \Delta v_{\text{earth}} &= v_{\text{transfer\_earth}} - v_{\text{earth}} \\
+    \Delta v_{\text{mars}} &= v_{\text{mars}} - v_{\text{transfer\_mars}} \\
+    \Delta v_{\text{total}} &= \lvert \Delta v_{\text{earth}} \rvert + \lvert \Delta v_{\text{mars}} \rvert
+\end{align*} Python exampleimport matplotlib.pyplot as plt
+import numpy as np
+from python_code import calculate_hohmann_transfer
+
+# Parameters
+earth_orbit_radius = 1.496e11  # Radius of Earth's orbit in meters
+mars_orbit_radius = 2.279e11  # Radius of Mars's orbit in meters
+delta_v_earth, delta_v_mars, total_delta_v = calculate_hohmann_transfer(earth_orbit_radius, mars_orbit_radius)
+
+# Generate coordinates for Earth's and Mars's orbits
+theta = np.linspace(0, 2 * np.pi, 100)
+earth_orbit_x = earth_orbit_radius * np.cos(theta)
+earth_orbit_y = earth_orbit_radius * np.sin(theta)
+mars_orbit_x = mars_orbit_radius * np.cos(theta)
+mars_orbit_y = mars_orbit_radius * np.sin(theta)
+
+# Transfer orbit parameters
+a_transfer = (earth_orbit_radius + mars_orbit_radius) / 2  # Semi-major axis of transfer orbit
+e_transfer = (mars_orbit_radius - earth_orbit_radius) / (earth_orbit_radius + mars_orbit_radius)  # Eccentricity
+
+# Generate coordinates for the Hohmann transfer orbit
+transfer_orbit_x = a_transfer * (np.cos(theta) - e_transfer)
+transfer_orbit_y = a_transfer * np.sqrt(1 - e_transfer**2) * np.sin(theta)
+
+# Plot the orbits and the transfer path
+plt.figure(figsize=(8, 8))
+plt.plot(earth_orbit_x, earth_orbit_y, label="Earth Orbit", color="blue", linestyle="-")
+plt.plot(mars_orbit_x, mars_orbit_y, label="Mars Orbit", color="red", linestyle="-")
+plt.plot(transfer_orbit_x, transfer_orbit_y, "--", label="Transfer Orbit", color="green")
+plt.scatter([0], [0], color="yellow", s=200, edgecolor="orange", label="Sun")
+
+# Plot styling
+plt.legend(loc="upper right", frameon=True, shadow=True)
+plt.title(f"Hohmann Transfer Orbit\nTotal Δv = {total_delta_v:.2f} m/s", fontsize=14)
+plt.xlabel("Distance (m)", fontsize=12)
+plt.ylabel("Distance (m)", fontsize=12)
+plt.grid(True, linestyle="--", alpha=0.7)
+plt.axis("equal")
+plt.savefig("plots/calculate_hohmann_transfer_plot.png", format="png", dpi=300)
+plt.show()

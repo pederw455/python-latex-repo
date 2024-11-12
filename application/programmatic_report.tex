@@ -4,6 +4,7 @@
 \usepackage{lmodern}%
 \usepackage{textcomp}%
 \usepackage{lastpage}%
+\usepackage{graphicx}%
 %
 \input{algo_docs/init.tex}%
 %
@@ -21,25 +22,73 @@ This document provides an overview of various algorithms and their significance 
 This chapter presents detailed analyses of different algorithms. It explores their mechanisms, use cases, and the theoretical concepts that underlie their effectiveness. Each algorithm is discussed with practical insights to highlight its strengths and potential limitations.
 
 %
+\newpage%
 \input{algo_docs/optimize_trajectory_doc.tex}%
+\input{algo_docs/optimize_trajectory_example.tex}%
+
+
+\begin{figure}[H]%
+\centering%
+\includegraphics[width=\textwidth]{plots/optimize_trajectory_plot.png}%
+\caption{Example plot of Optimize Trajectory.}%
+\end{figure}
+
+%
+\clearpage%
 \subsection{Code Listing}%
 \label{subsec:CodeListing}%
 \lstinputlisting[language=Python]{python_code/optimize_trajectory.py}
 
 %
+\newpage%
 \input{algo_docs/predator_prey_system_doc.tex}%
+\input{algo_docs/predator_prey_system_example.tex}%
+
+
+\begin{figure}[H]%
+\centering%
+\includegraphics[width=\textwidth]{plots/predator_prey_system_plot.png}%
+\caption{Example plot of Predator Prey System.}%
+\end{figure}
+
+%
+\clearpage%
 \subsection{Code Listing}%
 \label{subsec:CodeListing}%
 \lstinputlisting[language=Python]{python_code/predator_prey_system.py}
 
 %
+\newpage%
 \input{algo_docs/gravitational_assist_doc.tex}%
+\input{algo_docs/gravitational_assist_example.tex}%
+
+
+\begin{figure}[H]%
+\centering%
+\includegraphics[width=\textwidth]{plots/gravitational_assist_plot.png}%
+\caption{Example plot of Gravitational Assist.}%
+\end{figure}
+
+%
+\clearpage%
 \subsection{Code Listing}%
 \label{subsec:CodeListing}%
 \lstinputlisting[language=Python]{python_code/gravitational_assist.py}
 
 %
+\newpage%
 \input{algo_docs/calculate_hohmann_transfer_doc.tex}%
+\input{algo_docs/calculate_hohmann_transfer_example.tex}%
+
+
+\begin{figure}[H]%
+\centering%
+\includegraphics[width=\textwidth]{plots/calculate_hohmann_transfer_plot.png}%
+\caption{Example plot of Calculate Hohmann Transfer.}%
+\end{figure}
+
+%
+\clearpage%
 \subsection{Code Listing}%
 \label{subsec:CodeListing}%
 \lstinputlisting[language=Python]{python_code/calculate_hohmann_transfer.py}

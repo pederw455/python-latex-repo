@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.11.5)  10 NOV 2024 17:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.11.5)  12 NOV 2024 19:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -73,6 +73,30 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 (/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2021/09/03 v1.2n Refers to last page's name (HMM; JPG)
 )
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+)
 (./algo_docs/init.tex
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
@@ -84,12 +108,12 @@ Package: amstext 2021/08/26 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks18
-\ex@=\dimen141
+\@emptytoks=\toks19
+\ex@=\dimen143
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen142
+\pmbraise@=\dimen144
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
@@ -111,7 +135,7 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen143
+\big@size=\dimen145
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count199
@@ -124,41 +148,37 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \dotsspace@=\muskip16
 \c@parentequation=\count267
 \dspbrk@lvl=\count268
-\tag@help=\toks19
+\tag@help=\toks20
 \row@=\count269
 \column@=\count270
 \maxfields@=\count271
-\andhelp@=\toks20
-\eqnshift@=\dimen144
-\alignsep@=\dimen145
-\tagshift@=\dimen146
-\tagwidth@=\dimen147
-\totwidth@=\dimen148
-\lineht@=\dimen149
-\@envbody=\toks21
+\andhelp@=\toks21
+\eqnshift@=\dimen146
+\alignsep@=\dimen147
+\tagshift@=\dimen148
+\tagwidth@=\dimen149
+\totwidth@=\dimen150
+\lineht@=\dimen151
+\@envbody=\toks22
 \multlinegap=\skip51
 \multlinetaggap=\skip52
-\mathdisplay@stack=\toks22
+\mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks23
-)
 \lst@mode=\count272
 \lst@gtempboxa=\box53
 \lst@token=\toks24
 \lst@length=\count273
-\lst@currlwidth=\dimen150
+\lst@currlwidth=\dimen152
 \lst@column=\count274
 \lst@pos=\count275
-\lst@lostspace=\dimen151
-\lst@width=\dimen152
+\lst@lostspace=\dimen153
+\lst@width=\dimen154
 \lst@newlines=\count276
 \lst@lineno=\count277
-\lst@maxwidth=\dimen153
+\lst@maxwidth=\dimen155
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
@@ -179,9 +199,6 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
-)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
@@ -193,24 +210,15 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 107.
-)
-\Gin@req@height=\dimen154
-\Gin@req@width=\dimen155
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count280
+\float@exts=\toks25
+\float@box=\box55
+\@float@everytoks=\toks26
+\@floatcapt=\box56
 ))
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 10
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
 .
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
@@ -218,8 +226,8 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count280
-\l__pdf_internal_box=\box55
+\l__color_backend_stack_int=\count281
+\l__pdf_internal_box=\box57
 )
 (./programmatic_report.aux
 
@@ -231,37 +239,36 @@ LaTeX Warning: Label `subsec:CodeListing' multiply defined.
 )
 \openout1 = `programmatic_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 10.
-\c@lstlisting=\count281
+(lastpage)             ! on input line 11.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count282
 \scratchdimen=\dimen156
-\scratchbox=\box56
+\scratchbox=\box58
 \nofMPsegments=\count283
 \nofMParguments=\count284
-\everyMPshowfont=\toks25
+\everyMPshowfont=\toks27
 \MPscratchCnt=\count285
 \MPscratchDim=\dimen157
 \MPnumerator=\count286
 \makeMPintoPDFobject=\count287
-\everyMPtoPDFconversion=\toks26
+\everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -271,6 +278,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+\c@lstlisting=\count288
+
 (./algo_docs/title_page.tex [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./programmatic_report.to
@@ -316,45 +325,89 @@ Chapter 1.
 
 ]
 Chapter 2.
-(./algo_docs/optimize_trajectory_doc.tex
+[3
+
+] (./algo_docs/optimize_trajectory_doc.tex
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
 0.
 
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [3
-
-])
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+))
+(./algo_docs/optimize_trajectory_example.tex [4])
+<plots/optimize_trajectory_plot.png, id=31, 722.7pt x 433.62pt>
+File: plots/optimize_trajectory_plot.png Graphic file (type png)
+<use plots/optimize_trajectory_plot.png>
+Package pdftex.def Info: plots/optimize_trajectory_plot.png  used on input line
+ 32.
+(pdftex.def)             Requested size: 345.0pt x 206.9972pt.
+ [5 <./plots/optimize_trajectory_plot.png>] (/usr/share/texlive/texmf-dist/tex/
+latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-7.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
+0.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./python_code/optimize_trajectory.py [4]) (./algo_docs/predator_prey_system_
-doc.tex [5])
-(./python_code/predator_prey_system.py)
-(./algo_docs/gravitational_assist_doc.tex [6])
-(./python_code/gravitational_assist.py [7])
-(./algo_docs/calculate_hohmann_transfer_doc.tex [8])
-(./python_code/calculate_hohmann_transfer.py [9])
+) (./python_code/optimize_trajectory.py [6
 
+]) [7] (./algo_docs/predator_prey_system_doc.tex)
+(./algo_docs/predator_prey_system_example.tex
+Overfull \hbox (38.03178pt too wide) detected at line 12
+[]
+ []
+
+) [8]
+<plots/predator_prey_system_plot.png, id=49, 578.16pt x 433.62pt>
+File: plots/predator_prey_system_plot.png Graphic file (type png)
+<use plots/predator_prey_system_plot.png>
+Package pdftex.def Info: plots/predator_prey_system_plot.png  used on input lin
+e 50.
+(pdftex.def)             Requested size: 345.0pt x 258.74484pt.
+ [9 <./plots/predator_prey_system_plot.png>]
+(./python_code/predator_prey_system.py) [10
+
+]
+(./algo_docs/gravitational_assist_doc.tex)
+(./algo_docs/gravitational_assist_example.tex [11])
+<plots/gravitational_assist_plot.png, id=61, 578.16pt x 433.62pt>
+File: plots/gravitational_assist_plot.png Graphic file (type png)
+<use plots/gravitational_assist_plot.png>
+Package pdftex.def Info: plots/gravitational_assist_plot.png  used on input lin
+e 68.
+(pdftex.def)             Requested size: 345.0pt x 258.74484pt.
+ [12] [13 <./plots/gravitational_assist_plot.png>] (./python_code/gravitational
+_assist.py) [14
+
+]
+(./algo_docs/calculate_hohmann_transfer_doc.tex [15])
+(./algo_docs/calculate_hohmann_transfer_example.tex [16])
+<plots/calculate_hohmann_transfer_plot.png, id=79, 578.16pt x 578.16pt>
+File: plots/calculate_hohmann_transfer_plot.png Graphic file (type png)
+<use plots/calculate_hohmann_transfer_plot.png>
+Package pdftex.def Info: plots/calculate_hohmann_transfer_plot.png  used on inp
+ut line 86.
+(pdftex.def)             Requested size: 345.0pt x 344.99312pt.
+ [17 <./plots/calculate_hohmann_transfer_plot.png>] (./python_code/calculate_ho
+hmann_transfer.py
+[18
+
+]) 
 AED: lastpage setting LastPage
-[10] (./programmatic_report.aux)
+[19] (./programmatic_report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5006 strings out of 478051
- 73180 string characters out of 5840943
- 2111330 words of memory out of 5000000
- 25047 multiletter control sequences out of 15000+600000
+ 5129 strings out of 478051
+ 76377 string characters out of 5840943
+ 2192330 words of memory out of 5000000
+ 25148 multiletter control sequences out of 15000+600000
  567050 words of font info for 60 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 62i,17n,65p,396b,1884s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 61i,17n,65p,434b,1884s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
@@ -368,10 +421,10 @@ e/texmf/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pf
 b>
-Output written on programmatic_report.pdf (11 pages, 267235 bytes).
+Output written on programmatic_report.pdf (20 pages, 997939 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
+ 158 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

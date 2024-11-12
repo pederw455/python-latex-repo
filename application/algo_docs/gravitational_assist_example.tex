@@ -1,0 +1,20 @@
+\subsection{Example}
+The following example demonstrates the calculation of the spacecraft's final velocity after a gravitational assist maneuver using specific initial conditions.
+
+\begin{align*}
+    &\text{Given}: \\
+    &v_{\text{sc}} = 1.2 \times 10^4 \, \text{m/s}, \\
+    &v_{\text{p}} = 2.4 \times 10^4 \, \text{m/s}, \\
+    &m_{\text{p}} = 5.972 \times 10^{24} \, \text{kg}, \\
+    &d_{\text{closest}} = 6.7 \times 10^6 \, \text{m}, \\
+    \\
+    &\text{First, find the relative initial velocity:} \\
+    &v_{\text{rel, init}} = |v_{\text{sc}} - v_{\text{p}}| = |1.2 \times 10^4 - 2.4 \times 10^4| \, \text{m/s}. \\
+    \\
+    &\text{Next, calculate the velocity at infinity:} \\
+    &v_{\infty} = \sqrt{v_{\text{rel, init}}^2 + \frac{2 \cdot G \cdot m_{\text{p}}}{d_{\text{closest}}}}, \\
+    &\text{where } G = 6.67430 \times 10^{-11} \, \text{m}^3 \, \text{kg}^{-1} \, \text{s}^{-2}. \\
+    \\
+    &\text{Finally, compute the spacecraft's final velocity:} \\
+    &v_{\text{final}} = \sqrt{v_{\text{sc}}^2 + 2 \cdot (v_{\infty}^2 - v_{\text{sc}} \cdot v_{\infty} \cdot \cos(\pi))}.
+\end{align*}

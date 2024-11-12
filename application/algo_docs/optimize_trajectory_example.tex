@@ -1,0 +1,20 @@
+\subsection{Example}
+
+The following example illustrates the optimization of spacecraft trajectory, focusing on minimizing the total cost function \( C \) by varying the closest approach distances \( d_{\text{closest}} \).
+
+We start by defining the range of the closest approach distances that we will evaluate:
+
+\[
+d_{\text{closest}} = [5 \times 10^6, 2 \times 10^7] \text{ meters}
+\]
+
+For each value of \( d_{\text{closest}} \) within the specified range, the algorithm calculates the optimal cost \( C \) using the provided formulas and parameters:
+
+\begin{align*}
+    m_{\text{fuel}} &= 500000 \text{ kg} \\
+    T_{\text{initial}} &= 20000 \text{ N} 
+\end{align*}
+
+The calculations involve determining the effect of the closest approach distance on the total cost and identifying both the minimum and maximum cost points within this range.
+
+The goal is to observe the behavior of the optimal costs as a function of \( d_{\text{closest}} \) when gravitational assists are employed for trajectory optimization. The results are visualized to aid in understanding and enhancing the performance of the spacecraft's trajectory design by selecting the optimal closest approach distance.
