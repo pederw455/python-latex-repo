@@ -1,90 +1,109 @@
 
-# Python Project Template
-
-This is a template for creating Python projects with Docker, Poetry, and Git, allowing for easy setup and consistency across projects. Follow the steps below to clone this template and initialize a new project.
+README for POC Algorithm Documentation Generator
 
 ---
 
-## 1. Clone the Template Repository
-
-Start by cloning this template repository to create your new project:
-
-```bash
-git clone git@github.com:pederw455/python-project-tamplete.git new-project-name
-cd new-project-name
-```
-
-> Replace `new-project-name` with your desired project name.
+Overview
+This repository provides an automated solution for generating structured LaTeX documentation for Python algorithms using OpenAI's GPT-4 model. It simplifies the process of creating algorithm overviews, variable definitions, mathematical formulas, example plots, and Python code listings in a professional LaTeX format.
 
 ---
 
-## 2. Open i VS code and run Docker
-Open the folder in VS code:
-```bash
-code .
-```
-And after that reopen i Container
-
-   - `Ctrl + Shift + P` > **Remote-Containers: Reopen in Container**
-
-
-## 3. Remove Existing Git History
-
-Since this is a new project, remove the existing Git history associated with the template:
-
-```bash
-rm -rf .git
-```
+Features
+- Converts Python algorithms into structured LaTeX documentation.
+- Automatically generates LaTeX sections for introductions, variable descriptions, and formulas.
+- Creates example subsections with plots and example calculations.
+- Supports modular document assembly using pylatex.
+- Outputs a polished PDF document with chapters for each algorithm.
 
 ---
 
-## 4. Initialize a New Git Repository
-
-Initialize a new Git repository for this project:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit for new project"
-```
+Requirements
+- Docker: To containerize the environment.
+- Poetry: For dependency management.
+- API Key: OpenAI GPT API key stored in a .env file.
 
 ---
 
-## 5. Set Up a New Remote Repository
+Setup
 
-1. Create a new repository for this project on GitHub (or your preferred Git platform).
-2. Add the new remote repository as the origin:
-
+1. Clone the Repository
    ```bash
-    git remote add origin https://github.com/pederw455/new-project-name.git
-    git branch -M main
-    git push -u origin main
+   git clone <repository_url>
+   cd <repository_folder>
    ```
 
-> Replace `new-project-name` with your actual repository name.
+2. Install Dependencies
+   - Ensure Docker is installed and running.
+   - Use Poetry to install project dependencies:
+     ```bash
+     poetry install
+     ```
+
+3. Set Up .env File
+   Create a .env file in the root of the project and add your OpenAI API key:
+   ```
+   OPENAI_KEY=<your_openai_api_key>
+   ```
+
+4. Build Docker Container
+   Build the Docker image for the project:
+   ```bash
+   docker build -t algo-doc-gen .
+   ```
 
 ---
 
+Usage
 
-## 6. Install Dependencies with Poetry
+1. Run the Application
+   Use Docker to execute the container:
+   ```bash
+   docker run -v $(pwd):/app -w /app algo-doc-gen
+   ```
 
-If additional dependencies are needed, use Poetry to manage and install them within the Docker environment. For example:
+2. Generate LaTeX Documentation
+   Place your Python algorithm files in the python_code/ directory. The system will:
+   - Process each .py file.
+   - Generate LaTeX .tex files for documentation and examples.
+   - Include plots and code listings in the final LaTeX document.
 
-```bash
-poetry add <package-name>
-```
+3. Compile to PDF
+   The generated LaTeX files are combined into a single .tex document and compiled into a PDF:
+   ```bash
+   pdflatex programmatic_report.tex
+   ```
 
 ---
 
-## 7. Set Up Environment Variables
-
-This project template includes a `.env.example` file for setting environment variables. Set up your own `.env` file based on this template:
-
-```bash
-cp .env.example .env
-```
-
-Edit `.env` with any specific values your project requires.
+Repository Structure
+- python_code/: Contains Python algorithm files.
+- algo_docs/: Stores generated LaTeX documentation files.
+- examples/: Contains example inputs for algorithms.
+- plots/: Stores generated example plots.
+- .env: Stores the OpenAI API key.
+- Dockerfile: Configures the containerized environment.
+- programmatic_report.tex: The final compiled LaTeX document.
 
 ---
 
+Key Scripts
+1. ask_chat_gpt(prompt)
+   Communicates with the OpenAI API to generate content based on provided prompts.
+
+2. make_algo_doc_gpt_promt(name)
+   Creates a prompt for GPT to generate the main LaTeX documentation for an algorithm.
+
+3. make_algo_example_gpt_promt(name)
+   Creates a prompt for GPT to generate example content for an algorithm.
+
+4. make_algo_doc(name)
+   Generates .tex files for the algorithm documentation.
+
+5. make_algo_example(name)
+   Generates .tex files for example sections with plots and calculations.
+
+6. pylatex Integration
+   Assembles the .tex files into a full LaTeX document, adds metadata, and integrates plots and code listings.
+
+
+For questions or contributions, feel free to open an issue or submit a pull request.
