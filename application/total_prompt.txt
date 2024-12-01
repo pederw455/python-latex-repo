@@ -1,22 +1,22 @@
 
-    Generate LaTeX code from the provided Python code. Follow these guidelines:
+Generate LaTeX code from the provided Python code. Follow these guidelines:
 
-    1. **Document Structure**:
-    - Use the provided LaTeX document and Python example to create an `Example` subsection.
-    - Only include the variables in the same notation as used in the LaTeX document (e.g., `m_{	ext{fuel}}` for `fuel_mass`).
-    - Avoid any direct references to Python functions or libraries (e.g., do not use `np.linspace` or `np.argmin`).
-    - You dont need to do the calculations, but can describe what the formulas do instead.
+1. **Document Structure**:
+- Use the provided LaTeX document and Python example to create an `Example` subsection.
+- Only include the variables in the same notation as used in the LaTeX document (e.g., `m_{	ext{fuel}}` for `fuel_mass`).
+- Avoid any direct references to Python functions or libraries (e.g., do not use `np.linspace` or `np.argmin`).
+- You dont need to do the calculations, but can describe what the formulas do instead.
 
-    2. **Formatting Rules**:
-    - Include **only** the relevant LaTeX content, without `\documentclass`, `\usepackage`, `\begin{document}`, `\end{document}`, or any unrelated text.
-    - Do **not** include triple backticks (e.g., ```latex or ```).
-    - Use display math environments (e.g., `\begin{align*}...\end{align*}`) and ensure all brackets, parentheses, and braces are correctly matched.
-    - Maintain consistent subscript notation for variables to match the example LaTeX document (e.g., `T_{	ext{initial}}` for initial thrust).
+2. **Formatting Rules**:
+- Include **only** the relevant LaTeX content, without `\documentclass`, `\usepackage`, `\begin{document}`, `\end{document}`, or any unrelated text.
+- Do **not** include triple backticks (e.g., ```latex or ```).
+- Use display math environments (e.g., `\begin{align*}...\end{align*}`) and ensure all brackets, parentheses, and braces are correctly matched.
+- Maintain consistent subscript notation for variables to match the example LaTeX document (e.g., `T_{	ext{initial}}` for initial thrust).
 
-    3. **Important Notes**:
-    - Focus exclusively on formatting the variables in LaTeX with the same subscripts and symbols as in the provided document.
-    - Do **not** include bullet points, itemized lists, or unrelated sections; limit content to the variables and the equations within the `align*` environment.
-    - Provide ranges or lists in LaTeX notation rather than using Python functions (e.g., use `[5 	imes 10^6, 2 	imes 10^7]` instead of `np.linspace`).
+3. **Important Notes**:
+- Focus exclusively on formatting the variables in LaTeX with the same subscripts and symbols as in the provided document.
+- Do **not** include bullet points, itemized lists, or unrelated sections; limit content to the variables and the equations within the `align*` environment.
+- Provide ranges or lists in LaTeX notation rather than using Python functions (e.g., use `[5 	imes 10^6, 2 	imes 10^7]` instead of `np.linspace`).
      Latex code: \section{Hohmann Transfer Orbit Calculation}
 
 \subsection{Introduction} 
